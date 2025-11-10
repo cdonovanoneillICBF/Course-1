@@ -18,22 +18,34 @@ body {
 header {
   text-align: center;
   padding: 20px 0;
-  margin-bottom: 30px;
-  background-color: #1a237e;
-  color: white;
-  border-radius: 5px;
-}
-
-header h1 {
-  margin-bottom: 10px;
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
+ .participants-list {
+   margin: 10px 0;
+ }
+ 
+ .participant-row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 6px 0;
+   border-bottom: 1px solid #f0f0f0;
+ }
+ 
+ .participant-email {
+   color: #555;
+   font-size: 14px;
+   word-break: break-all;
+ }
+ 
+ .delete-icon {
+   cursor: pointer;
+   color: #c62828;
+   font-size: 18px;
+   margin-left: 12px;
+   transition: color 0.2s;
+ }
+ .delete-icon:hover {
+   color: #a31515;
+ }
 
 @media (min-width: 768px) {
   main {
